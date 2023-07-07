@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #007B84;
+    --secondary-color: #00565C;
+    --border-color : #00565C;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display:flex;
+    background-color:antiquewhite;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-con{
+    height: fit-content;
+    width: 50vw;
+    border: 3px solid var(--primary-color);
+    box-sizing: border-box;
+    box-shadow: 0px 20px 25px rgba(0,0,0,0.3);
+}
+
+/* Utility  */
+
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* All About Title */
+
+.title{
+    height: fit-content;
+    padding: 3%;
+    border-bottom:var(--primary-color) 3px solid;
+    box-sizing: border-box;
+    background-color:#8ee3ea;
+}
+
+.title span{
+    font-size: 200%;
+    font-weight: 500px;
+    color:#032c2f;
+
+}
+
+/*  Converter Section*/
+
+.convert{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+/* intput section */
+
+.input{
+    background-color: white;
+    width: 50%;
+}
+
+.enter{
+    font-size: 25px;
+    padding:20px 20px 20px 30px ;
+    margin-top: 20px;
+    color: #032c2f;
+}
+
+.degree{
+    font-size: large;
+    padding:20px 20px 20px 30px ;
+    padding-right: 25px;
+}
+
+.cell{
+    display: flex;
+    padding:1%;
+}
+
+.cell input{
+    width: 40%;
+}
+
+.cell input,select{
+    height: 12%;
+    padding:1%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5% 5% 7% 5%;
+}
+
+.btn button{
+    margin: 0 auto;
+    padding: 2% 5%;
+    border-radius: 6px;
+    background-color:#035c63;
+    color: white;
+    font-size:medium;
+}
+
+.btn button:hover{
+    background-color: #007B84;
+}
+
+/* Output section*/
+
+.output{
+    background-color: var(--primary-color);
+    width: 50%;
+    border-left: 3px solid var(--primary-color);
+    box-sizing: border-box;
+    color: white;
+}
+
+#convertedDegree{
+    font-size:50px;
+}
+
+#degree,#convertedUnit{
+    padding: 1%;
+    height: 28%;
+    font-size: 30px;
+}
+
+/* media Query*/
+@media screen and (max-width : 800px) {
+    .convert{
+        flex-direction: column-reverse;
+    }
+    .main-con{
+        width: 95vw;
+    }
+    .input,.output{
+        width: inherit;
+    }
+}
+
+

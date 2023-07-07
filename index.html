@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-con">
+
+        <div class="title all-center">
+            <span>Temperature Converter</span>
+        </div>
+
+        <div class="convert">
+          <div class="input">
+
+              <div class="enter"><span>Enter Temperature</span></div>
+              <div class="degree">
+                  <span style="display: block; margin-bottom: 10px;">Degree</span>
+                  <div class="cell">
+                    <input type="number" placeholder="Enter Degree" id="getDegree" value="0" style="margin-right: 3%;">
+                    <select name="" id="inputdegree" onclick="show()">
+                      <option value="C" selected>&deg;C</option>
+                      <option value="F" >&deg;F</option>
+                      <option value="K" >K</option>
+                    </select>
+                  </div> 
+              </div>
+
+              <div class="degree">
+                  <span style="display: block; margin-bottom: 10px;">Convert in</span>
+                  <div class="cell">
+                    <select name="" id="outputdegree" style="width: 150px;">
+                      <option value="F" selected>Fahrenheit(&deg;F)</option>
+                      <!-- <option value="C">Celcius(&deg;C )</option> -->
+                      <option value="K">Kelvin(K)</option>
+                    </select>
+                  </div>
+                  
+              </div>
+
+              <div class="btn">
+                <button id="button">Convert</button>
+                <button onclick="document.getElementById('getDegree').value = 0">Clear</button>
+              </div>
+              
+          </div>
+          <div class="output all-center">
+            <div id="convertedDegree">32</div>
+            <h3 id="degree"><sup>&deg;</sup></h3>
+            <h3 id="convertedUnit">F</h3>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
